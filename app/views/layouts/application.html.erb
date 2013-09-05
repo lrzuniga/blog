@@ -8,6 +8,14 @@
 </head>
 <body>
 
+
+<%= link_to "Index Page", posts_path %>
+
+<% if @post.present? and @post.new_record? == false %>
+  <%= link_to "Delete", post_path(@post), method: :delete %>
+  <%= link_to "Edit", edit_post_path(@post)%>
+<% end %>
+<%= link_to "Add Post", new_post_path %>
 <%= yield %>
 
 </body>
