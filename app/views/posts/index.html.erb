@@ -1,0 +1,9 @@
+<h1>Index.html</h1>
+
+<ul>
+<% @posts.each do | post| %>
+  <li><%= link_to post.title, post %></li>  <!--#post is the path -->
+<% end %>
+</ul>
+
+<%= link_to "Add Post", new_post_path %>

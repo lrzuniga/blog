@@ -1,0 +1,9 @@
+<h1>SHOW.HTML</h1>
+
+<h2><%= @post.title %></h2>
+
+<p><%= @post.body %></p>
+
+<%= link_to "Index Page", posts_path %>
+<%= link_to "Delete", post_path(@post), method: :delete %>
+<%= link_to "Edit", edit_post_path(@post)%>

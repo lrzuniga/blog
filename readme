@@ -1,0 +1,11 @@
+gem 'rspec-rails'
+gem 'sqlite3'
+
+gem 'rails', '3.2.11'
+
+rails generate rspec:install
+
+
+rails generate model post
+
+migration only goes forward and only forward
